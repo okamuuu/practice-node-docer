@@ -9,4 +9,4 @@ dependencies:
 
 test:
  override:
-  - npm run test
+  - docker run okamuuu/practice-node-docker npm run test
