@@ -1,0 +1,12 @@
+machine:
+ services:
+  - docker
+
+dependencies:
+ pre:
+  - docker info
+  - docker build -t okamuuu/practice-node-docker .
+
+test:
+ override:
+  - npm run test
